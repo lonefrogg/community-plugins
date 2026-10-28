@@ -18,7 +18,7 @@ Control [Throne](https://github.com/throneproj/Throne) from a native Noctalia ba
 | --- | --- |
 | ID | `lonefrogg/throne-vpn` |
 | Entries | Bar widget: `bar`; panel: `panel`; service: `backend` |
-| Version | `2.1.1` |
+| Version | `2.1.2` |
 | License | MIT |
 
 ## Requirements

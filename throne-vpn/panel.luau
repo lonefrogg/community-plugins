@@ -75,7 +75,7 @@ render = function()
             ui.button({ glyph = "refresh", variant = "ghost", controlSize = "sm", tooltip = tr("panel.refresh"), onClick = refresh, enabled = not busy }),
             ui.button({ glyph = "x", variant = "ghost", controlSize = "sm", tooltip = tr("panel.close"), onClick = function() panel.close() end }),
         }),
-        ui.row({ key = "status", height = STATUS_HEIGHT, gap = 12, padding = 14, radius = 16, fill = activeTun and "primary/0.12" or "surface_variant", align = "center" }, {
+        ui.row({ key = "status", height = STATUS_HEIGHT, gap = 12, padding = 14, radius = 16, fill = activeTun and "primary/0.12" or "surface", align = "center" }, {
             ui.glyph({ name = stateGlyph, size = 28, color = activeTun and "primary" or "on_surface_variant" }),
             ui.column({ gap = 4, flexGrow = 1 }, {
                 label(stateText, { fontSize = 14, fontWeight = "semibold", color = activeTun and "primary" or "on_surface" }),
@@ -117,7 +117,7 @@ render = function()
                 local selected = active and current.id == row.id
                 local tested = row.download_bps > 0
                 local id = row.id
-                table.insert(rows, ui.column({ key = "profile-" .. tostring(id), gap = 5, padding = 12, radius = 12, fill = selected and "primary/0.12" or "surface_variant", border = selected and "primary/0.55" or "outline/0.15", borderWidth = 1, onClick = function()
+                table.insert(rows, ui.column({ key = "profile-" .. tostring(id), gap = 5, padding = 12, radius = 12, fill = selected and "primary/0.12" or "surface", border = selected and "primary/0.55" or "on_surface_variant/0.15", borderWidth = 1, onClick = function()
                     if not changing and not (selected and activeTun) then action("connect", id) end
                 end }, {
                     ui.row({ gap = 8, align = "center" }, {

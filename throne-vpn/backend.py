@@ -20,7 +20,7 @@ import subprocess
 import sys
 import time
 
-VERSION = "2.1.1"
+VERSION = "2.1.2"
 MAX_ID = 2**53 - 1  # IDs must remain exact when copied into Luau numbers.
 MAX_OUTPUT = 8 * 1024 * 1024
 
