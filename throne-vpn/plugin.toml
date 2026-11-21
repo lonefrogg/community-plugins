@@ -1,6 +1,6 @@
 id = "lonefrogg/throne-vpn"
 name = "Throne VPN"
-version = "2.1.2"
+version = "2.1.3"
 plugin_api = 24
 author = "lonefrogg"
 license = "MIT"

@@ -18,7 +18,7 @@ Control [Throne](https://github.com/throneproj/Throne) from a native Noctalia ba
 | --- | --- |
 | ID | `lonefrogg/throne-vpn` |
 | Entries | Bar widget: `bar`; panel: `panel`; service: `backend` |
-| Version | `2.1.2` |
+| Version | `2.1.3` |
 | License | MIT |
 
 ## Requirements
@@ -36,7 +36,9 @@ Throne must be running with its API enabled, at least one profile configured and
 
 ## Installation
 
-Add this repository as a Noctalia plugin source and enable the plugin:
+Find **Throne VPN** in the community source under **Settings → Plugins → Plugin Store** and enable it.
+
+To install from the standalone project, add its Git source and enable the plugin:
 
 ```sh
 noctalia msg plugins source add throne-vpn git https://github.com/lonefrogg/noctalia_throne_plugin.git
